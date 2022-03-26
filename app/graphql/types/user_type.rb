@@ -12,5 +12,10 @@ module Types
     field :donor_status, Integer
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
+    field :phone_formatter, String, null: true
+
+    def phone_formatter
+      object.formatted_phone
+    end
   end
 end
