@@ -37,11 +37,11 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry'
   gem 'shoulda-matchers', '~> 5.0'
+  gem 'graphiql-rails'
 end
 
 group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
-  gem 'graphiql-rails'
 end
 
 group :test do
