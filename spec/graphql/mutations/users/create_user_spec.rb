@@ -6,7 +6,6 @@ module Mutations
       describe '.resolve' do
         it 'creates a user' do
           expect(User.count).to eq(0)
-          require "pry"; binding.pry
           post '/graphql', params: {query: query}
           expect(User.count).to eq(1)
         end
@@ -14,12 +13,12 @@ module Mutations
         it 'returns a user' do
           post '/graphql', params: { query: query }
           json = JSON.parse(response.body)
-          data = json['data']
-          expect(data['user']['name']).to eq('Samantha')
-          expect(data['user']['email']).to eq("so@gmail.com")
-          expect(data['user']['phone']).to eq("4231563232")
-          expect(data['user']['bio']).to eq("abc")
-          expect(data['user']['location']).to eq("Denver, CO")
+          data = json['data']['createUser']
+          expect(data['user']['name']).to eq('Mom')
+          expect(data['user']['email']).to eq("mom@gmail.com")
+          expect(data['user']['phoneFormatter']).to eq("(720) 453-9810")
+          expect(data['user']['bio']).to eq("I am mom")
+          expect(data['user']['location']).to eq("denver,co")
           expect(data['user']['donorStatus']).to eq(0)
         end
 
@@ -31,21 +30,24 @@ module Mutations
 
       def query
         <<~GQL
-        mutation {
-          user: createUser(
-          input: {
-            name: "Samantha",
-            email: "so@gmail.com",
-            phone: "4231563232",
-            bio: "abc",
-            location: "Denver, CO",
+        mutation{
+          createUser(input: {
+            name: "Mom",
+            email: "mom@gmail.com",
+            phone: "7204539810",
+            bio: "I am mom",
+            location: "denver,co",
             donorStatus: 0
-          }
-          ) {
-            name
-            id
-            email
-            phoneFormatter
+            }) {
+              user {
+                id
+                name
+                email
+                bio
+                phoneFormatter
+                location
+                donorStatus
+              }
             }
           }
         GQL
