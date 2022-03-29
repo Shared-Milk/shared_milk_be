@@ -7,7 +7,7 @@ class CreateUsers < ActiveRecord::Migration[5.2]
       t.text :bio
       t.text :location
       t.integer :active_status
-      t.integer :donor_status
+      t.integer :donor_status, :default => 0
       t.timestamps
     end
   end

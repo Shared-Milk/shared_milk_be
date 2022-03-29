@@ -8,7 +8,7 @@ class User < ApplicationRecord
   validates :phone, presence: true
   validates :bio, presence: true
   validates :location, presence: true
-
+  attribute :donor_status
   enum active_status: {active: 0, inactive: 1}
   enum donor_status: {donor: 0, recipient: 1}
   before_save :normalize_phone
