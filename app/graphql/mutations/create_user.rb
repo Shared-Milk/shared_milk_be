@@ -10,7 +10,6 @@ class Mutations::CreateUser < Mutations::BaseMutation
   field :errors, [String], null: false
 
   def resolve(name:, email:, phone:, bio:, location:, donor_status:)
-    # require "pry"; binding.pry
     user = User.new(name: name, email: email, phone: phone, bio: bio, location: location, donor_status: donor_status)
 
     if user.save
