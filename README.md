@@ -207,7 +207,9 @@ At this point you should be taken to a page with an example JSON response for a 
   <tr>
     <td align="center"><a href="https://github.com/sethperna"><img src="https://avatars.githubusercontent.com/u/90224504?v=4" width="100px;" alt=""/><br /><sub><b>Seth (he/him)</b></sub></a><br /><a href="https://github.com/Shared-Milk/shared_milk_be/commits?author=sethperna" title="Code">💻</a> <a href="https://github.com/Shared-Milk/shared_milk_be/pulls?q=is%3Apr+author%3ASethPerna" title="Reviewed Pull Requests">👀</a>
      </td>
-       <td align="center"><a href="https://github.com/kanderson852"><img src="https://avatars.githubusercontent.com/u/89998621?v=4" width="100px;" alt=""/><br /><sub><b>Kelly(she/her)</b></sub></a><br /><a href="https://github.com/Shared-Milk/shared_milk_be/commits?author=kanderson852" title="Code">💻</a> <a href="https://github.com/Shared-Milk/shared_milk_be/pulls?q=is%3Apr+author%3Akanderson852" title="Reviewed Pull Requests">👀</a>
+       <td align="center"><a href="https://github.com/kanderson852"><img src="https://avatars.githubusercontent.com/u/89998621?v=4" width="100px;" alt=""/><br /><sub><b>Kelly (she/her)</b></sub></a><br /><a href="https://github.com/Shared-Milk/shared_milk_be/commits?author=kanderson852" title="Code">💻</a> <a href="https://github.com/Shared-Milk/shared_milk_be/pulls?q=is%3Apr+author%3Akanderson852" title="Reviewed Pull Requests">👀</a>
+     </td>
+      <td align="center"><a href="https://github.com/EMielke76"><img src="https://avatars.githubusercontent.com/u/89998621?v=4" width="100px;" alt=""/><br /><sub><b>Eric (he/him)</b></sub></a><br /><a href="https://github.com/Shared-Milk/shared_milk_be/commits?author=EMielke76" title="Code">💻</a> <a href="https://github.com/Shared-Milk/shared_milk_be/pulls?q=is%3Apr+author%3AEMielke76" title="Reviewed Pull Requests">👀</a>
      </td>
     </tr>
 </table>
