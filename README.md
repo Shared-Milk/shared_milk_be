@@ -209,8 +209,6 @@ At this point you should be taken to a page with an example JSON response for a 
      </td>
        <td align="center"><a href="https://github.com/kanderson852"><img src="https://avatars.githubusercontent.com/u/89998621?v=4" width="100px;" alt=""/><br /><sub><b>Kelly(she/her)</b></sub></a><br /><a href="https://github.com/Shared-Milk/shared_milk_be/commits?author=kanderson852" title="Code">💻</a> <a href="https://github.com/Shared-Milk/shared_milk_be/pulls?q=is%3Apr+author%3Akanderson852" title="Reviewed Pull Requests">👀</a>
      </td>
-      <td align="center"><a href="https://github.com/dylan-harper"><img src="https://avatars.githubusercontent.com/u/39470230?v=4" width="100px;" alt=""/><br /><sub><b>Dylan(he/him)</b></sub></a><br /><a href="https://github.com/cuisine-odyssey/backend_application/commits?author=dylan-harper" title="Code">💻</a> <a href="https://github.com/Cuisine-Odyssey/backend_application/pulls?q=is%3Apr+author%3Adylan-harper" title="Reviewed Pull Requests">👀</a>
-     </td>
     </tr>
 </table>
 
