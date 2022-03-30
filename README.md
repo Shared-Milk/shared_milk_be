@@ -215,6 +215,8 @@ At this point you should be taken to a page with an example JSON response for a 
      </td>
       <td align="center"><a href="https://github.com/lschnell8"><img src="https://avatars.githubusercontent.com/u/78449313?v=4" width="100px;" alt=""/><br /><sub><b>Lindsay (no personal preference)</b></sub></a><br /><a href="https://github.com/Shared-Milk/shared_milk_be/commits?author=lschnell8" title="Code">💻</a> <a href="https://github.com/Shared-Milk/shared_milk_be/pulls?q=is%3Apr+author%3Alschnell8" title="Reviewed Pull Requests">👀</a>
      </td>
+      <td align="center"><a href="https://github.com/cagallo"><img src="https://avatars.githubusercontent.com/u/78453792?v=4" width="100px;" alt=""/><br /><sub><b>Chez (sher/her)</b></sub></a><br /><a href="https://github.com/Shared-Milk/shared_milk_be/commits?author=cagallo" title="Code">💻</a> <a href="https://github.com/Shared-Milk/shared_milk_be/pulls?q=is%3Apr+author%3Acagallo" title="Reviewed Pull Requests">👀</a>
+     </td>
     </tr>
 </table>
 
