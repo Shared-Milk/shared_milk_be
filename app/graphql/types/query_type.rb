@@ -15,12 +15,18 @@ module Types
       User.all
     end
 
+    field :active_users, [Types::UserType], null: false
+
+    def active_users
+      User.only_active
+    end
+
     field :user, Types::UserType, null: false do
       argument :id, ID, required: true
     end
 
     def user(id:)
       User.find(id)
-    end 
+    end
   end
 end
