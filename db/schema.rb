@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 2022_03_25_225806) do
     t.string "phone"
     t.text "bio"
     t.text "location"
-    t.integer "active_status"
+    t.integer "active_status", default: 0
     t.integer "donor_status", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

@@ -14,23 +14,33 @@ class User < ApplicationRecord
   before_save :normalize_phone
 
 
- def formatted_phone
-   parsed_phone = Phonelib.parse(phone)
-   return phone if parsed_phone.invalid?
+  def formatted_phone
+    parsed_phone = Phonelib.parse(phone)
+    return phone if parsed_phone.invalid?
 
-   formatted =
-     if parsed_phone.country_code == "1"
-       parsed_phone.full_national
-     else
-       parsed_phone.full_international
-     end
-   formatted.gsub!(";", " x")
-   formatted
- end
+    formatted =
+      if parsed_phone.country_code == "1"
+        parsed_phone.full_national
+      else
+        parsed_phone.full_international
+      end
+    formatted.gsub!(";", " x")
+    formatted
+  end
+
+  def self.only_active
+    User.where(active_status: 0).each do |donor|
+      if donor.requests.last.requested_at < Date.current - 3.week
+        donor.update(active_status: 1)
+      end
+    end
+    User.where(active_status: 0)
+  end
 
  private
 
- def normalize_phone
-   self.phone = Phonelib.parse(phone).full_e164.presence
- end
+  def normalize_phone
+    self.phone = Phonelib.parse(phone).full_e164.presence
+  end
+
 end
