@@ -12,7 +12,7 @@ module Types
     field :users, [Types::UserType], null: false
 
     def users
-      User.all
+      User.where(active_status: 0)
     end
 
     field :active_users, [Types::UserType], null: false
