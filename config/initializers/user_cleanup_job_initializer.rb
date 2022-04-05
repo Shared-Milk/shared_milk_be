@@ -1,0 +1,1 @@
+UserCleanupJob.perform_now
