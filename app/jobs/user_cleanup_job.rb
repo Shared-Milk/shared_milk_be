@@ -1,4 +1,6 @@
 class UserCleanupJob < ApplicationJob
+  RUN_EVERY = 1.week
+
   queue_as :default
 
   def perform
@@ -8,6 +10,7 @@ class UserCleanupJob < ApplicationJob
           donor.update(active_status: 1)
         end
       end
-    end 
+    end
+    self.class.perform_later(wait: RUN_EVERY)
   end
 end
