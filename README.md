@@ -7,6 +7,14 @@
 [![All Contributors](https://img.shields.io/badge/contributors-7-orange.svg?style=flat)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
+## Table of contents
+- [Bakcground and Description](#background-and-description)
+- [Schema](#schema)
+- [API Docs](#api-docs)
+- [Learning Goals](#learning-goals)
+- [Setup](#setup)
+- [Ruby and Rails](#ruby-and-rails)
+- [Gems](#gems)
 
 ## Background and Description
 
@@ -18,6 +26,9 @@ Shared Milk is a collobarotive application, inspired by a father who watched the
 ## Schema 
 
 <img width="581" alt="Screen Shot 2022-03-30 at 9 51 48 AM" src="https://user-images.githubusercontent.com/90224504/160850784-dcb0ea33-8c24-427e-82c1-aeffb885b50e.png">
+
+## API Docs
+[View the Documentation](https://documenter.getpostman.com/view/19300850/UVyvutvQ)
 
 
 ## Learning Goals
@@ -40,7 +51,7 @@ Shared Milk is a collobarotive application, inspired by a father who watched the
 - Ruby Version 2.7.4
 - Rails Version 5.2.7
 
-### Gems Utilized
+### Gems
 - RSpec 
 - Pry
 - SimpleCov
@@ -190,15 +201,11 @@ $ rails s
 At this point you should be taken to a page with an example JSON response for a user
 
 ## Endpoints provided 
-```
-
-- '/graphql', to get create a user and to retrieve all users for a region.
-
-```
+See the docs, located [here!](https://documenter.getpostman.com/view/19300850/UVyvutvQ)
 
 
 
-## **Contributors** ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+## Contributors ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
