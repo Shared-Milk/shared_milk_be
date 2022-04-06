@@ -17,7 +17,7 @@ module Mutations
           data = json['data']['createUser']
 
           expect(data['user']['name']).to eq('Blair Smith')
-          expect(data['user']['id']).to eq("2")
+          expect(data['user']['id']).to be_a(String)
           expect(data['user']['email']).to eq("bsmith91@faker.net")
           expect(data['user']['phoneFormatter']).to eq("(720) 395-0987")
           expect(data['user']['location']).to eq("littleton,co")
