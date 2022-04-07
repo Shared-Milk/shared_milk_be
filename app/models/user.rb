@@ -28,15 +28,6 @@ class User < ApplicationRecord
     formatted
   end
 
-  def self.only_active
-    User.where(active_status: 0).each do |donor|
-      if donor.requests.last.requested_at < Date.current - 3.week
-        donor.update(active_status: 1)
-      end
-    end
-    User.where(active_status: 0)
-  end
-
  private
 
   def normalize_phone
