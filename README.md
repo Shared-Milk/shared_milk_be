@@ -71,12 +71,14 @@ Shared Milk is a collobarotive application, inspired by a father who watched the
 On your local machine open a terminal session and enter the following commands for SSH or HTTPS to clone the repositiory.
 
 
-- using ssh key <br>
+- using ssh key
+
 ```shell
 $ git clone git@github.com:Shared-Milk/shared_milk_be.git
 ```
 
-- using https <br>
+- using https
+
 ```shell
 $ git clone https://github.com/Shared-Milk/shared_milk_be
 ```
@@ -177,26 +179,33 @@ Using simplecov_json_formatter 0.1.3
 Using simplecov 0.21.2
 Using spring 2.1.1
 Using spring-watcher-listen 2.0.1
+```
 
 If there are any errors, verify that bundler, Rails, and your ruby environment are correctly setup.
 
-4. Database Migration<br>
+4. Database Migration
+
 Before using the web application you will need to setup your databases locally by running the following command
 
+
 ```shell
-$ rails db: {:drop, :create, :migrate, :seed}
+$ brew install postgresql@15
+$ brew services start postgresql@15
+$ rails db{:drop, :create, :migrate, :seed}
 ```
 
+5. Startup and Access
 
-5. Startup and Access<br>
-Finally, in order to use the web app you will have to start the server locally and access the app through a web browser. 
+Finally, in order to use the web app you will have to start the server locally and access the app through a web browser.
+
 - Start server
+
 ```shell
 $ rails s
 ```
 
 - Open web browser and visit link
-    http://localhost:3000
+    http://localhost:5000
     
 At this point you should be taken to a page with an example JSON response for a user
 
