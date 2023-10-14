@@ -6,4 +6,4 @@ COPY Gemfile Gemfile.lock ./
 RUN #bundle config build.nokogiri --use-system-libraries
 RUN bundle check || bundle install
 COPY . ./
-ENTRYPOINT ["/bin/bash", "./entrypoints/docker-entrypoint.sh"]
+ENTRYPOINT ["/bin/bash", "/app/entrypoints/docker-entrypoint.sh"]
